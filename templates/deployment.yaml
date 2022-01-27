@@ -12,7 +12,6 @@ spec:
     metadata:
       annotations:
        checksum/config: {{ include (print $.Template.BasePath "/configmap.yaml") . | sha256sum }}
-       checksum/secrets: {{ include (print $.Template.BasePath "/sealed-secrets.yaml") . | sha256sum }}
       labels:
         app: demo-app
     spec:
