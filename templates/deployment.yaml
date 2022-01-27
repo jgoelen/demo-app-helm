@@ -26,8 +26,6 @@ spec:
           envFrom:
             - configMapRef:
                 name: demo-configmap
-            - secretRef:
-                name: demo-secrets
           resources:
             requests:
               memory: "128Mi"
