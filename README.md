@@ -12,3 +12,11 @@ The following script can be triggered from CI to update the image version for th
 
 The script uses [yq](https://github.com/mikefarah/yq) to manipulate the `values.yaml` file.
 
+
+## Test Helm Chart
+
+The following command can be used to perform a basic test of the Helm chart:
+
+```
+helm template -f ./config/test/values.yaml demo-app .
+```
