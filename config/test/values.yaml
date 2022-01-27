@@ -1,4 +1,4 @@
 app:
-  image: "nginx:latest"
+  image: "nginx:1.20.1-alpine"
   replicas: 1
 environment: test
